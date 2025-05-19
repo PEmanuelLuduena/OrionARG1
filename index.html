@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OriónARG - Contacto</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+  <header>
+    <a href="https://www.twitch.tv/Dumbito20" target="_blank" class="btn-twitch">
+      <i data-lucide="twitch"></i> Seguí mi Twitch
+    </a>
+  </header>
+
+  <section>
+    <h2>Contactame</h2>
+    <form id="contact-form">
+      <label for="user_name">Nombre:</label>
+      <input type="text" id="user_name" name="user_name" required />
+
+      <label for="user_email">Email:</label>
+      <input type="email" id="user_email" name="user_email" required />
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
