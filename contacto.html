@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contacto - Mi Web</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Contacto</h1>
+  <nav>
+    <a href="index.html">Inicio</a> |
+    <a href="contacto.html">Contacto</a> |
+    <a href="about.html">Acerca de</a>
+  </nav>
+  <form id="contactForm">
+    <label>Nombre: <input type="text" name="user_name" required /></label><br/>
+    <label>Email: <input type="email" name="user_email" required /></label><br/>
+    <label>Mensaje:<br/><textarea name="message" required></textarea></label><br/>
+    <button type="submit">Enviar</button>
+  </form>
+  <script src="jsmail.js"></script>
+</body>
+</html>
