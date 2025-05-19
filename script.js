@@ -14,3 +14,14 @@ document.getElementById('form').addEventListener('submit', function(event) {
       alert('Error al enviar el mensaje: ' + JSON.stringify(error));
     });
 });
+
+window.onload = function () {
+  const page = window.location.pathname.split("/").pop(); // nombre del archivo
+  const visitedKey = "visited_" + page;
+
+  if (localStorage.getItem(visitedKey)) {
+    window.location.href = "index.html"; // redirige a la página principal
+  } else {
+    localStorage.setItem(visitedKey, "true");
+  }
+};
